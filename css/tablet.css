@@ -1,0 +1,6 @@
+
+#acciones_usa tbody {
+    height: fit-content;
+    overflow-y: hidden;
+    display: contents;
+}  

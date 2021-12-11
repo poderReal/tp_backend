@@ -1,0 +1,394 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+@font-face {
+    font-family: 'Hahmlet';
+    src: url(../fonts/Hahmlet/Hahmlet-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Goldman';
+    src: url(../fonts/Goldman/Goldman-Regular.ttf);
+}
+
+.logo {
+    font-family: Goldman !important;
+    color: white;
+    font-size: 2.5vw;
+} 
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color:rgb(13, 13, 95);
+    padding: 2vw;
+}
+
+body {
+    font-family: Hahmlet;
+}
+
+#nav-links{
+    list-style: none;
+    font-size: 1vw;
+}
+
+#nav-links li{
+    display: inline-block;
+    padding: 1vw 3vw;
+}
+
+#nav-links li a{
+    text-decoration: none;
+    font-family: Verdana; 
+    color: silver;
+    font-weight: 700;
+}
+
+#nav-links .link_solitario a {
+    background-color: rgb(13, 13, 95);
+    color: white;
+    position: fixed;
+    font-size: 1.1vw;
+    padding: 0.35vw 0.35vw;
+    bottom: 80px;
+    left: 75%;
+    border-radius: 0.3vw;
+}
+
+#nav-links li a:hover{
+    color: rgb(202, 5, 5);
+}
+
+#menu-sandwich ul{
+    list-style: none;       /* quiero que el menu desplegable de anclas solo se vea en celulares ---- en desktop que hagan scroll*/
+    margin: 0;
+    padding: 0;
+    display: none;
+    background-color: slategray;
+}
+
+#fecha {
+    background-color: rgb(75,75,171);
+    text-align: right;
+    color: white;
+    font-family: Verdana;
+    font-size: 1.1vw;
+    font-weight: 600;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.imagen_principal{
+    padding: 0;
+    background-color: black;   
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(min(100%,20rem),1fr));
+    padding-top: 25px;
+    padding-bottom: 25px;
+    gap: 25px 30px;
+    background-color: black;
+    justify-content: center;
+    align-content: center;
+}
+
+.box {
+    justify-self: center; 
+}
+
+table {
+    border-collapse: collapse;  
+    width: 100%;
+    margin-top: -5px;   
+}   
+
+table .cabecera th{
+    font-size: 1.25vw; 
+}
+
+thead th{
+    font-size: 0.9vw;
+    background-color: rgb(53, 53, 120);
+    padding: auto;
+}
+
+tbody .items_dolar td, tbody .items_eeuu td {
+    font-size: 0.82vw;
+    font-weight: 1000;  
+    background-color: rgb(53, 53, 120);
+    color: black;
+}
+
+tbody .items td {
+    font-size: 0.88vw;
+    font-weight: 1000;
+    background-color: rgb(53, 53, 120);
+    color: black;
+}
+
+tbody td{
+    text-align: center;
+    font-size: 0.9vw;
+}
+
+table tbody tr:hover{
+    background-color: rgb(116, 101, 101);
+}
+
+tbody tr td{
+    color: rgb(14, 51, 14);
+    padding: 0.2vw 0.25vw 0.2vw;
+}
+
+#cripto tbody td{
+    font-size: 0.905vw;
+}  
+
+#acciones_usa tbody {
+    display: block;
+    max-height: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}  
+
+[data-title] {
+    position: relative;
+}
+
+[data-title]:hover:before{
+    content: attr(data-title);
+    visibility: visible;
+}
+
+[data-title]:before {
+    content: attr(data-title);
+    font-family: Verdana;
+    position: absolute;
+    bottom: 100%;
+    left: -5%;
+    visibility: hidden;
+    background-color: rgb(49, 48, 48);
+    color: white;
+    padding: 0.25vw;
+    white-space: nowrap; 
+}
+
+.tipo{
+    color: black;
+    text-align: left;
+}
+
+.ticker{
+    color: black;
+    font-weight: bold;
+    text-align: left;
+}
+
+.precio{
+    color: black;
+}
+
+.negativo{
+    color: rgb(158, 3, 3);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgb(219, 219, 224);
+}
+  
+tbody tr:nth-child(even) {
+    background-color: slategray;
+} 
+  
+footer {
+    background-color: rgb(13, 13, 95);
+    color: white;
+    font-size: 1.1vw;
+    text-align: center;
+    height: 90px;
+}
+
+.myclass {
+    background-color:rgb(13, 13, 95);
+}
+
+.mynavbar{
+    text-decoration: none;
+    font-family: Verdana; 
+    color: silver;
+    font-weight: 700;
+}
+
+.myheader{
+    padding: 1.5vw;
+}
+
+.myfooterclass {
+    color: white;
+}
+
+.contactotipo{
+    list-style: none;
+}
+
+.contactotipo li{
+    display: inline-block;
+    font-size: 20px;
+    padding: 0px 5px;
+}
+
+.contactotipo li a{
+    color: white;
+}
+
+.contactotipo li a:hover{
+    color: rgb(202, 5, 5);
+}
+
+.titulo_glosario{
+    background-color: rgb(171, 121, 41);
+    padding: 10px;
+    padding-left: 25px;
+    font-family: Verdana;
+    font-size: 1.25vw;
+    color: white;
+}
+
+.contenedor {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.tres-columnas {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.entrada-blog {
+    flex-basis: calc(33.3% - 0.5rem);
+}
+
+.caja1, .caja5{
+    background-color: rgb(88,94,10);
+    color: rgb(158, 154, 154);
+    margin: 10px auto 10px;
+    padding: 1.5vw 0.7vw 1vw 15px;
+    border-radius: 0.5vw;
+}
+
+.caja2, .caja4 {
+    background-color:rgb(159, 171, 7);
+    color: rgb(49, 48, 48);
+    margin: 10px auto 10px;
+    padding: 1.5vw 0.7vw 1vw 15px;
+    border-radius: 0.5vw;
+}
+
+.caja3, .caja6 {
+    background-color:rgb(227, 228, 216);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.img_blog, iframe{
+    display: block;
+    margin: 10px auto 10px;   
+} 
+
+.titulo_R {
+    background-color: rgb(94, 66, 20);
+    padding: 10px;
+    padding-left: 25px;
+    font-family: Verdana;
+    font-size: 1.25vw;
+    color: white;
+}
+
+.contenedor_grid {
+    display: grid;
+    grid-template-columns: 20% 80% ;
+    background-color: white;
+    padding-left: 0%;
+    gap: 15px 15px;
+    margin: 20px;
+}
+
+.contenedor_grid > article {
+    background-color: white;
+    color: rgb(49, 48, 48);
+}
+
+.item_grid1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.item_grid6 {
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+
+.seccion {
+    border-right: rgb(13, 13, 95) dotted;
+    margin-top: 2vw;
+    animation-duration: 1s;
+    animation-name: slidein2;
+}
+
+.img_seccion {
+    display: block;
+    margin: auto;
+}
+
+.reporte_titulo {
+    color:rgb(13, 13, 95);
+    margin-bottom: 10px;
+}
+
+.reporte {
+    text-align: justify;
+    padding-right: 15px;
+    margin-top: 2vw;
+    animation-duration: 1s;
+    animation-name: slidein1;
+}
+
+.item_grid1, .item_grid4, .item_grid6 {
+    padding-top: 12px;
+}
+
+.seccion > h2 {
+    text-align: center;
+}
+
+@keyframes slidein1 {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); 
+    }
+}
+  
+@keyframes slidein2 {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

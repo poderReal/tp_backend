@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="./css/celular.css" media="only screen and (max-width:600px)">
+   <link rel="stylesheet" href="./css/tablet.css" media="only screen and (min-width:600px) and (max-width:1200px)">
+   <link rel="stylesheet" href="./css/desktop.css" media="only screen and (min-width:1200px)">
+   <script src="https://kit.fontawesome.com/514e4a9715.js" crossorigin="anonymous"></script>
+   <title>The Market Lab</title>
+</head>
+
+<body>
+   <header id="header">
+      <div class="nav-logo">
+         <h1 class="logo">The Market Lab</h1>
+      </div>
+      <nav class="nav-primario">
+         <ul id="nav-links">
+            <li>
+               <a href="index.html"> <i class="fas fa-home"></i> Home</a>
+            </li>
+            <li>
+               <a href="reportes.html"> <i class="fas fa-chart-line"></i> Reportes</a>
+            </li>
+            <li>
+               <a href="glosario.html"> <i class="fas fa-book"></i> Glosario</a>
+            </li>
+            <li class="link_solitario">
+               <a href="contacto.html">Contáctanos!</a>
+            </li>
+         </ul>
+      </nav>
+   </header>
+   
+   <nav id="menu-sandwich">
+      <ul>
+         <li><a href="">Cotizaciones e indicadores <i class="fas fa-bars"></i></a>
+            <ul id="nav-links-home">
+               <li>
+                  <a href="#dolar">Dólar</a>
+               </li>
+               <li>
+                  <a href="#merval">Merval</a>
+               </li>
+               <li>
+                  <a href="#adrs">ADRs</a>
+               </li>
+               <li>
+                  <a href="#acciones_usa">Acciones USA</a>
+               </li>
+               <li>
+                  <a href="#cripto">Criptomonedas</a>
+               </li>
+               <li>
+                  <a href="#bonos_usd">Bonos en USD</a>
+               </li>
+               <li>
+                  <a href="#mercado_int">Mercado internacional</a>
+               </li>
+               <li>
+                  <a href="#indic_monet">Indicadores Monetarios</a>
+               </li>
+            </ul>
+         </li>
+      </ul>
+   </nav>
+   <div id="fecha"></div>
+
+   <main class="container">
+      <div class="box">
+         <img src="./img/dolar.jpg" alt="dolar">
+         <table id="dolar">
+            <thead class="cabecera">
+               <th colspan="6">
+                  DÓLAR
+               </th>
+            </thead>
+            <tbody>
+               <tr class="items_dolar">
+                  <td>Especie</td>
+                  <td>Precio</td>
+                  <td>%YTD</td>
+                  <td>%YTY</td>
+                  <td>%YTD real</td>
+                  <td>%YTY real</td>
+               </tr>
+               <tr>
+                  <td class="tipo" data-title="MEP AL30/AL30D regulado">MEP</td>
+                  <td class="precio">179.23</td>
+                  <td>28.03</td>
+                  <td>9.29</td>
+                  <td class="negativo">-6.55</td>
+                  <td class="negativo">-28.33</td>
+               </tr>
+               <tr>
+                  <td class="tipo" data-title="CCL promedio no regulado">CCL</td>
+                  <td class="precio">200.27</td>
+                  <td>42.78</td>
+                  <td>10.61</td>
+                  <td>4.22</td>
+                  <td class="negativo">-27.47</td>
+               </tr>
+               <tr>
+                  <td class="tipo">OFICIAL</td>
+                  <td class="precio">104.75</td>
+                  <td>17.36</td>
+                  <td>25.82</td>
+                  <td class="negativo">-14.33</td>
+                  <td class="negativo">-17.49</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div class="box">
+         <img src="./img/cripto.jpg" alt="criptos">
+         <table id="cripto">
+            <thead class="cabecera">
+               <th colspan="6">
+                  CRIPTOMONEDAS
+               </th>
+            </thead>
+            <tbody>
+               <tr class="items">
+                  <td>Especie</td>
+                  <td>Precio</td>
+                  <td>%YTD</td>
+                  <td>%YTY</td>
+                  <td>%YTD real</td>
+                  <td>%YTY real</td>
+               </tr>
+               <tr class="Bitcoin">
+                  <td class="ticker" data-title="Bitcoin">BTC</td>
+                  <td class="precio">61002</td>
+                  <td class="data">1y.5</td>
+                  <td class="data">37yyy53</td>
+                  <td class="data">9y96</td>
+                  <td class="data">3y37</td>
+               </tr>
+               <tr class="Ethereum">
+                  <td class="ticker" data-title="Ethereum">ETH</td>
+                  <td class="precio">4092.41</td>
+                  <td class="data">4tt17</td>
+                  <td class="data">8ttt.2</td>
+                  <td class="data">4aa.22</td>
+                  <td class="data">848</td>
+               </tr>
+               <tr class="Ripple" >
+                  <td class="ticker " data-title="Ripple">XRP</td>
+                  <td class="precio">1.087</td>
+                  <td class="data">39sdfa</td>
+                  <td class="data">3aaaa</td>
+                  <td class="data">aaaa9</td>
+                  <td class="data">30aaa44</td>
+               </tr>
+               <tr class="Cardano" >
+                  <td class="ticker" data-title="Cardano">ADA</td>
+                  <td class="precio">2.15</td>
+                  <td class="data">1bb3</td>
+                  <td class="data">1888</td>
+                  <td class="data">10yy3</td>
+                  <td class="data">1787</td>
+               </tr>
+               <tr class="Doge_Coin">
+                  <td class="ticker" data-title="Doge Coin">DOGE</td>
+                  <td class="precio">0.2481</td>
+                  <td class="data">5b71</td>
+                  <td class="data">9bb2</td>
+                  <td class="data">5000</td>
+                  <td class="data">b2</td>
+               </tr>
+               <tr class="Litecoin" >
+                  <td class="ticker" data-title="Litecoin">LTC</td>
+                  <td class="precio">194.79</td>
+                  <td class="data">56.61</td>
+                  <td class="data">251.29</td>
+                  <td class="data">48.73</td>
+                  <td class="data">233.29</td>
+               </tr>
+               <tr class="Monero">
+                  <td class="ticker" data-title="Monero">XMR</td>
+                  <td class="precio">265.08</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div class="box">
+         <img src="./img/images (1).jpg" alt="bancos">
+         <table id="indic_monet">
+            <thead class="cabecera">
+               <th colspan="4">
+                  INDICADORES MONETARIOS
+               </th>
+            </thead>
+            <tbody>
+               <tr class="items">
+                  <td>Tipo</td>
+                  <td>Último</td>
+                  <td>%YTD</td>
+                  <td>%YTY</td>
+               </tr>
+               <tr>
+                  <td class="tipo" data-title="Argentina: Inflación minorista">Inflación IPC</td>
+                  <td class="precio">3.5%</td>
+                  <td>37</td>
+                  <td>52.5</td>
+               </tr>
+               <tr>
+                  <td class="tipo" data-title="tasa de interés efectiva anual" >tasa interés LELIQ</td>
+                  <td class="precio">45.44%</td>
+                  <td>-</td>
+                  <td>-</td>
+               </tr>
+               <tr>
+                  <td class="tipo" data-title="saldo en MM $">saldo LELIQ pesos</td>
+                  <td class="precio">2,237</td>
+                  <td>31.46</td>
+                  <td>30.49</td>
+               </tr>
+               <tr>
+                  <td class="tipo" data-title="saldo en M USD">saldo LELIQ USD</td>
+                  <td class="precio">12,483</td>
+                  <td>2.68</td>
+                  <td>19.39</td>
+               </tr>
+               <tr>
+                  <td class="tipo" data-title="saldo en MM $">Base monetaria</td>
+                  <td class="precio">3,006</td>
+                  <td>21.71</td>
+                  <td>32.81</td>
+               </tr>
+               <tr>
+                  <td class="tipo" data-title="EEUU: Inflación minorista">Inflación EEUU</td>
+                  <td class="precio">0.4%</td>
+                  <td>5.3</td>
+                  <td>5.4</td>
+               </tr>
+               <tr>
+                  <td class="tipo">tasa Federal Funds</td>
+                  <td class="precio">0.25%</td>
+                  <td>-</td>
+                  <td>-</td>
+               </tr>
+               <tr>
+                  <td class="tipo">tasa bonos 10Y</td>
+                  <td class="precio">1.64%</td>
+                  <td>-</td>
+                  <td>-</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div class="box">
+         <img src="./img/argentinabandera.jpg" alt="bandera_argentina">
+         <table id="merval">
+            <thead class="cabecera">
+               <th colspan="6">
+                  ACCIONES MERVAL
+               </th>
+            </thead>
+            <tbody>
+               <tr class="items">
+                  <td>Especie</td>
+                  <td>Precio</td>
+                  <td>%YTD</td>
+                  <td>%YTY</td>
+                  <td>%YTD real</td>
+                  <td>%YTY real</td>
+               </tr>
+               <tr class="ALUA">
+                  <td class="ticker" data-title="Aluar SAIC">ALUA</td>
+                  <td class="precio">71.80</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data negativo"></td>
+               </tr>
+               <tr class="BBAR">
+                  <td class="ticker" data-title="Banco BBVA">BBAR</td>
+                  <td class="precio">274.55</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="BMA">
+                  <td class="ticker" data-title="Banco Macro">BMA</td>
+                  <td class="precio">357.25</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data negativo"></td>
+               </tr>
+               <tr class="BYMA">
+                  <td class="ticker" data-title="Bolsas y Mercados Argentinos">BYMA</td>
+                  <td class="precio">792</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+               </tr>
+               <tr class="CEPU">
+                  <td class="ticker" data-title="Central Puerto">CEPU</td>
+                  <td class="precio">83.85</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="COME">
+                  <td class="ticker" data-title="Comercial del Plata">COME</td>
+                  <td class="precio">5.39</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="CRES">
+                  <td class="ticker" data-title="Cresud">CRES</td>
+                  <td class="precio">113.00</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="CVH">
+                  <td class="ticker" data-title="Cablevisión">CVH</td>
+                  <td class="precio">475.50</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+               </tr>
+               <tr class="EDN">
+                  <td class="ticker" data-title="Edenor">EDN</td>
+                  <td class="precio">73.05</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="GGAL">
+                  <td class="ticker" data-title="Grupo Financiero Galicia">GGAL</td>
+                  <td class="precio">228.90</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="HARG">
+                  <td class="ticker" data-title="Holcim Argentina">HARG</td>
+                  <td class="precio">182</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data negativo"></td>
+               </tr>
+               <tr class="LOMA">
+                  <td class="ticker" data-title="Loma Negra">LOMA</td>
+                  <td class="precio">279.05</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="MIRG">
+                  <td class="ticker" data-title="Mirgor">MIRG</td>
+                  <td class="precio">4011</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="PAMP">
+                  <td class="ticker" data-title="Pampa Energía">PAMP</td>
+                  <td class="precio">162.50</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="SUPV">
+                  <td class="ticker" data-title="Bco. Supervielle">SUPV</td>
+                  <td class="precio">99.85</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="TECO2">
+                  <td class="ticker" data-title="Telecom Arg.">TECO2</td>
+                  <td class="precio">212.55</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data negativo"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="TGNO4">
+                  <td class="ticker" data-title="Trans. Gas del Norte">TGNO4</td>
+                  <td class="precio">103.25</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="TGSU2">
+                  <td class="ticker" data-title="Trans. Gas del Sur">TGSU2</td>
+                  <td class="precio">232.80</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+               </tr>
+               <tr class="TRAN">
+                  <td class="ticker" data-title="Transener">TRAN</td>
+                  <td class="precio">68.00</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="TXAR">
+                  <td class="ticker" data-title="Ternium">TXAR</td>
+                  <td class="precio">104.50</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="VALO">
+                  <td class="ticker" data-title="Grupo Financiero Valores">VALO</td>
+                  <td class="precio">25.95</td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+               </tr>
+               <tr class="YPFD">
+                  <td class="ticker" data-title="YPF SA">YPFD</td>
+                  <td class="precio">905.10</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data negativo"></td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div class="box">
+         <img src="./img/eeuuargentinaflags.jpg" alt="banderas">
+         <table id="adrs">
+            <thead class="cabecera">
+               <th colspan="6">
+                  ADRs
+               </th>
+            </thead>
+            <tbody>
+               <tr class="items">
+                  <td>Especie</td>
+                  <td>Precio</td>
+                  <td>%YTD</td>
+                  <td>%YTY</td>
+                  <td>%YTD real</td>
+                  <td>%YTY real</td>
+               </tr>
+               <tr class="bbar">
+                  <td class="ticker" data-title="Banco BBVA">BBAR</td>
+                  <td class="precio">4.12</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="bma">
+                  <td class="ticker" data-title="Banco Macro">BMA</td>
+                  <td class="precio">17.68</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="caap">
+                  <td class="ticker" data-title="Corp. América">CAAP</td>
+                  <td class="precio">5.94</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="cepu">
+                  <td class="ticker" data-title="Central Puerto">CEPU</td>
+                  <td class="precio">4.13</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="cresy">
+                  <td class="ticker" data-title="Cresud">CRESY</td>
+                  <td class="precio">5.65</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="desp">
+                  <td class="ticker" data-title="Despegar.com">DESP</td>
+                  <td class="precio">11.43</td>
+                  <td class="data negativo"></td>
+                  <td class="data"></td>
+                  <td class="data negativo"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="edn">
+                  <td class="ticker" data-title="Edenor">EDN</td>
+                  <td class="precio">7.33</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="ggal">
+                  <td class="ticker" data-title="Grupo Financiero Galicia">GGAL</td>
+                  <td class="precio">103.55</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="glob">
+                  <td class="ticker" data-title="Globant">GLOB</td>
+                  <td class="precio">305.07</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="ircp">
+                  <td class="ticker" data-title="Irsa Propiedades">IRCP</td>
+                  <td class="precio">2.70</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="irs">
+                  <td class="ticker" data-title="Irsa Inversiones">IRS</td>
+                  <td class="precio">4.865</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="loma">
+                  <td class="ticker" data-title="Loma Negra">LOMA</td>
+                  <td class="precio">6.88</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="meli">
+                  <td class="ticker" data-title="Mercado Libre">MELI</td>
+                  <td class="precio">1503.78</td>
+                  <td class="data negativo"></td>
+                  <td class="data"></td>
+                  <td class="data negativo"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="pamp">
+                  <td class="ticker" data-title="Pampa Energía">PAMP</td>
+                  <td class="precio">20.10</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="supv">
+                  <td class="ticker" data-title="Bco. Supervielle">SUPV</td>
+                  <td class="precio">2.43</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="teo">
+                  <td class="ticker" data-title="Telecom Arg.">TEO</td>
+                  <td class="precio">5.24</td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+               </tr>
+               <tr class="tgs">
+                  <td class="ticker" data-title="Trans. Gas del Sur">TGS</td>
+                  <td class="precio">5.75</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="ts">
+                  <td class="ticker" data-title="Tenaris">TS</td>
+                  <td class="precio">23.07</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="tx">
+                  <td class="ticker" data-title="Ternium">TX</td>
+                  <td class="precio">44.28</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="vist">
+                  <td class="ticker" data-title="Vista Oil & Gas">VIST</td>
+                  <td class="precio">6.75</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="ypf">
+                  <td class="ticker" data-title="YPF SA">YPF</td>
+                  <td class="precio">4.47</td>
+                  <td class="data negativo"></td>
+                  <td class="data"></td>
+                  <td class="data negativo"></td>
+                  <td class="data"></td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div class="box">
+         <img src="./img/argentinabandera.jpg" alt="argentina">
+         <table id="bonos_usd">
+            <thead class="cabecera">
+               <th colspan="6">
+                  BONOS EN DOLARES
+               </th>
+            </thead>
+            <tbody>
+               <tr class="items">
+                  <td>Especie</td>
+                  <td>Precio</td>
+                  <td>%YTD</td>
+                  <td>%YTY</td>
+                  <td>%YTD real</td>
+                  <td>%YTY real</td>
+               </tr>
+               <tr class="al29">
+                  <td class="ticker">AL29D</td>
+                  <td class="precio">36.81</td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+               </tr>
+               <tr class="al30">
+                  <td class="ticker">AL30D</td>
+                  <td class="precio">35.82</td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+               </tr>
+               <tr class="al35">
+                  <td class="ticker">AL35D</td>
+                  <td class="precio">33.20</td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+               </tr>
+               <tr class="al41">
+                  <td class="ticker">AL41D</td>
+                  <td class="precio">35.61</td>
+                  <td class="data negativo"></td>
+                  <td class="data"></td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+               </tr>
+               <tr class="gd29">
+                  <td class="ticker">GD29D</td>
+                  <td class="precio">39.00</td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+               </tr>
+               <tr class="gd30">
+                  <td class="ticker">GD30D</td>
+                  <td class="precio">37.70</td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+               </tr>
+               <tr class="gd35">
+                  <td class="ticker">GD35D</td>
+                  <td class="precio">33.20</td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+               </tr>
+               <tr class="gd38">
+                  <td class="ticker">GD38D</td>
+                  <td class="precio">40.33</td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+               </tr>
+               <tr class="gd46">
+                  <td class="ticker">GD46D</td>
+                  <td class="precio">34.00</td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div class="box">
+         <img src="./img/mercadoglobal.jpg" alt="mercadoglobal">
+         <table id="mercado_int">
+            <thead class="cabecera">
+               <th colspan="6">
+                  MERCADO INTERNACIONAL
+               </th>
+            </thead>
+            <tbody>
+               <tr class="items">
+                  <td>Especie</td>
+                  <td>Precio</td>
+                  <td>%YTD</td>
+                  <td>%YTY</td>
+                  <td>%YTD real</td>
+                  <td>%YTY real</td>
+               </tr>
+               <tr class="merv">
+                  <td class="ticker">Merval</td>
+                  <td class="precio">484.57</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="boves">
+                  <td class="ticker">Bovespa</td>
+                  <td class="precio">18812</td>
+                  <td class="data negativo"></td>
+                  <td class="data"></td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+               </tr>
+               <tr class="syp500">
+                  <td class="ticker">S&P500</td>
+                  <td class="precio">4544</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="qqq">
+                  <td class="ticker">Nasdaq</td>
+                  <td class="precio">15090</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="eem">
+                  <td class="ticker" data-title="Emerging Markets">EEM (ETF)</td>
+                  <td class="precio">52.04</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data negativo"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="csi">
+                  <td class="ticker" data-title="Shangai Shenzhen Index">CSI-300</td>
+                  <td class="precio">4959</td>
+                  <td class="data negativo"></td>
+                  <td class="data"></td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+               </tr>
+               <tr class="oro">
+                  <td class="ticker">Oro</td>
+                  <td class="precio">1793</td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+               </tr>
+               <tr class="petrol">
+                  <td class="ticker" data-title="Petroleo WTI">Petroleo</td>
+                  <td class="precio">83.98</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="soja">
+                  <td class="ticker" data-title="Soja Chicago">Soja</td>
+                  <td class="precio">1219</td>
+                  <td class="data negativo"></td>
+                  <td class="data"></td>
+                  <td class="data negativo"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="gas">
+                  <td class="ticker" data-title="Gas">Gas</td>
+                  <td class="precio">732.6</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="eur">
+                  <td class="ticker" data-title="Paridad Euro-Dólar">eur/usd</td>
+                  <td class="precio">1.1644</td>
+                  <td class="data negativo">-4.64</td>
+                  <td class="data negativo">-1.79</td>
+                  <td class="data">-</td>
+                  <td class="data">-</td>
+               </tr>
+               <tr class="cnh">
+                  <td class="ticker" data-title="Paridad Dólar-Yuan Chino">usd/cnh</td>
+                  <td class="precio">6.38</td>
+                  <td class="data negativo">-1.74</td>
+                  <td class="data negativo">-4.23</td>
+                  <td class="data">-</td>
+                  <td class="data">-</td>
+               </tr>
+               <tr class="brl">
+                  <td class="ticker" data-title="Paridad Dólar-Real Brasileño">usd/brl</td>
+                  <td class="precio">5.65</td>
+                  <td class="data">8.76</td>
+                  <td class="data">0.56</td>
+                  <td class="data">-</td>
+                  <td class="data">-</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div class="box">
+         <img src="./img/euuflag.jpg" alt="bandera_usa">
+         <table id="acciones_usa">
+            <thead class="cabecera">
+               <th colspan="6">ACCIONES EEUU
+               </th>
+            </thead>
+            <tbody>
+               <tr class="items_eeuu">
+                  <td>Especie</td>
+                  <td>Precio</td>
+                  <td>%YTD</td>
+                  <td>%YTY</td>
+                  <td>%YTD real</td>
+                  <td>%YTY real</td>
+               </tr>
+               <tr class="aapl">
+                  <td class="ticker" data-title="Apple Inc.">AAPL</td>
+                  <td class="precio">55</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="amd">
+                  <td class="ticker" data-title="Advanced Micro Devices">AMD</td>
+                  <td class="precio">103.55</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="amzn">
+                  <td class="ticker" data-title="Amazon Inc.">AMZN</td>
+                  <td class="precio">103.55</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+               </tr>
+               <tr class="ba">
+                  <td class="ticker" data-title="Boeing">BA</td>
+                  <td class="precio">103.55</td>
+                  <td class="data negativo"></td>
+                  <td class="data"></td>
+                  <td class="data negativo"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="baba">
+                  <td class="ticker" data-title="Alibaba Group">BABA</td>
+                  <td class="precio">103.55</td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+               </tr>
+               <tr class="bbd">
+                  <td class="ticker" data-title="Bradesco Bank">BBD</td>
+                  <td class="precio">103.55</td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+               </tr>
+               <tr class="bac">
+                  <td class="ticker" data-title="Bank of America">BAC</td>
+                  <td class="precio">103.55</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="brkb">
+                  <td class="ticker" data-title="Berkshire Hathaway">BRK.B</td>
+                  <td class="precio">103.55</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="c">
+                  <td class="ticker" data-title="Citigroup">C</td>
+                  <td class="precio">103.55</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="dis">
+                  <td class="ticker" data-title=" Walt Disney Company">DIS</td>
+                  <td class="precio">103.55</td>
+                  <td class="data negativo"></td>
+                  <td class="data"></td>
+                  <td class="data negativo"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="fb">
+                  <td class="ticker" data-title="Facebook Inc.">FB</td>
+                  <td class="precio">103.55</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="ge">
+                  <td class="ticker" data-title="General Electric">GE</td>
+                  <td class="precio">103.55</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="gold">
+                  <td class="ticker" data-title="Barrick Gold">GOLD</td>
+                  <td class="precio">103.55</td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+               </tr>
+               <tr class="googl">
+                  <td class="ticker" data-title="Google Inc.">GOOGL</td>
+                  <td class="precio">103.55</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="gs">
+                  <td class="ticker" data-title="Goldman Sachs">GS</td>
+                  <td class="precio">103.55</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="ibm">
+                  <td class="ticker" data-title="IBM Corp.">IBM</td>
+                  <td class="precio">103.55</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data negativo"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="intc">
+                  <td class="ticker" data-title="Intel Inc.">INTC</td>
+                  <td class="precio">103.55</td>
+                  <td class="data"></td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+               </tr>
+               <tr class="jnj">
+                  <td class="ticker" data-title="Johnson and Johnson">JNJ</td>
+                  <td class="precio">103.55</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data negativo"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="jpm">
+                  <td class="ticker" data-title="JP Morgan">JPM</td>
+                  <td class="precio">103.55</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="ko">
+                  <td class="ticker" data-title="Coca-Cola">KO</td>
+                  <td class="precio">103.55</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data negativo"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="msft">
+                  <td class="ticker" data-title="Microsoft">MSFT</td>
+                  <td class="precio">103.55</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="nflx">
+                  <td class="ticker" data-title="Netflix">NFLX</td>
+                  <td class="precio">103.55</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="nvda">
+                  <td class="ticker" data-title="Nvidia Corp.">NVDA</td>
+                  <td class="precio">103.55</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="pbr">
+                  <td class="ticker" data-title="Petrobras">PBR</td>
+                  <td class="precio">103.55</td>
+                  <td class="data negativo"></td>
+                  <td class="data"></td>
+                  <td class="data negativo"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="pg">
+                  <td class="ticker" data-title="Procter and Gamble">PG</td>
+                  <td class="precio">103.55</td>
+                  <td class="data"></td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+               </tr>
+               <tr class="pypl">
+                  <td class="ticker" data-title="Paypal Inc.">PYPL</td>
+                  <td class="precio">103.55</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data negativo"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="t">
+                  <td class="ticker" data-title="AT&T">T</td>
+                  <td class="precio">103.55</td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+               </tr>
+               <tr class="tsla">
+                  <td class="ticker" data-title="Tesla">TSLA</td>
+                  <td class="precio">103.55</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="twtr">
+                  <td class="ticker" data-title="Twitter">TWTR</td>
+                  <td class="precio">103.55</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="v">
+                  <td class="ticker" data-title="Visa">V</td>
+                  <td class="precio">103.55</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="vale">
+                  <td class="ticker" data-title="Vale SA">VALE</td>
+                  <td class="precio">103.55</td>
+                  <td class="data negativo"></td>
+                  <td class="data"></td>
+                  <td class="data negativo"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="wmt">
+                  <td class="ticker" data-title="Wal-Mart Stores">WMT</td>
+                  <td class="precio">103.55</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data negativo"></td>
+                  <td class="data negativo"></td>
+               </tr>
+               <tr class="x">
+                  <td class="ticker" data-title="US Steel">X</td>
+                  <td class="precio">103.55</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+               <tr class="xom">
+                  <td class="ticker" data-title="Exxon Mobil">XOM</td>
+                  <td class="precio">103.55</td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+                  <td class="data"></td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+   </main>
+   <footer>
+      <ul class="contactotipo">
+          <li> <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a></li>
+          <li> <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+          <li> <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube-square fa-2x"></i></a></li>
+      </ul>
+      <p>2021</p>
+      <p>Princess Chelsea LLC - Derechos Reservados</p>
+   </footer>
+   <script src="./js/index.js"></script>
+</body>
+
+</html>

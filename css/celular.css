@@ -1,0 +1,196 @@
+html{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.logo {
+    font-family: Goldman !important;
+    color: white;
+    font-size: 5vw;
+} 
+
+#header {
+    padding: 4vw;
+}
+
+#nav-links{
+    font-size: 1.68vw;
+}
+
+#nav-links li{
+    padding: 1.618vw 4vw;
+}
+
+#nav-links .link_solitario a {
+    font-size: 3vw;
+    padding: 0.7vw 0.7vw;
+    bottom: 80px;
+    left: 75%;
+    border-radius: 0.6vw;
+}
+
+#menu-sandwich ul{
+    list-style: none;    
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: rgb(35, 35, 247);
+}
+
+#menu-sandwich ul li{
+    position: relative;
+    float: left;
+    background-color: rgb(35, 35, 247);
+}
+
+#menu-sandwich ul a {
+    display: block;
+    color:rgb(26, 17, 17);
+    text-decoration: none;
+    font-family: Verdana;
+    font-size: 2.2vw;
+    padding: 2vw;
+}
+
+#menu-sandwich ul li:hover {
+    background-color:rgb(88, 77, 77)
+}
+
+#menu-sandwich ul li:hover > ul {
+    display: block;
+} 
+
+#menu-sandwich ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 999;
+}
+
+#menu-sandwich ul ul li {
+    float:left;
+    width: 100%;
+}
+
+#menu-sandwich ul ul a {
+    line-height: 100%;
+}
+
+#fecha {
+    font-size: 2.5vw;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+#cripto tbody td{
+    font-size: 2vw;
+}  
+
+#acciones_usa tbody {
+    height: fit-content;
+    overflow-y: hidden;
+    display: contents;
+}  
+
+img{
+    max-width:100%;
+}
+
+table{
+    min-height: 100px;
+}
+
+table .cabecera th{
+    font-size: 2.5vw; 
+}
+
+thead th{
+    font-size: 1.8vw;
+}
+
+tbody .items_dolar td {
+    font-size: 1.64vw;
+}
+
+tbody .items td {
+    font-size: 1.92vw;
+}
+
+tbody .items_eeuu td {
+    font-size: 1.64vw;
+}
+
+tbody td{
+    font-size: 2vw;
+}
+
+tbody tr td{
+    padding: 0.4vw 0.5vw 0.4vw;
+}
+
+.titulo_glosario{
+    padding: 10px;
+    padding-left: 25px;
+    font-size: 3vw;
+}
+
+.titulo_item, .titulo_iframe{
+    font-size: 3.6vw;
+}
+
+.contenedor {
+    margin: auto auto;
+}
+
+.tres-columnas {
+    display: block;
+    flex-wrap: wrap;
+}
+.entrada-blog {
+    width:100%;
+}
+
+.caja1, .caja5{
+    background-color: rgb(94,65,18);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 1.5vw;
+    padding-bottom: 1vw;
+    padding-left: 1px;
+    border-radius: 0.5vw;
+    padding-left: 3px;
+}
+
+.caja2, .caja4 {
+    background-color: rgb(159, 171, 7);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 1.5vw;
+    padding-bottom: 1vw;
+    border-radius: 0.5vw;
+    padding-left: 3px;
+}
+
+.iframe {
+    width:200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    font-size: 3.6vw;
+}
+
+.seccion > h2 {
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+.titulo_R {
+    padding: 10px;
+    padding-left: 25px;
+    font-size: 2.5vw;
+}
+
+

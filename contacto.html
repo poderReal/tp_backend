@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/celular.css" media="only screen and (max-width:600px)">
+    <script src="https://kit.fontawesome.com/514e4a9715.js" crossorigin="anonymous"></script>
+    <title>Contacto</title>
+</head>
+
+<body>
+    
+    <div class="container-md">
+        <nav class="navbar navbar-expand-lg navbar-dark myclass"> 
+            <div class="container-fluid myheader">
+                <h2 class="logo"> <strong>The Market Lab</strong> </h2>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup" >
+                    <div class="navbar-nav mynavbar">
+                        <a class="nav-link active px-5" aria-current="page" href="index.html"><i class="fas fa-home"></i> Home</a>
+                        <a class="nav-link active px-5" href="reportes.html"><i class="fas fa-chart-line"></i> Reportes</a>
+                        <a class="nav-link active px-5" href="glosario.html"><i class="fas fa-book"></i> Glosario</a>
+                    </div>
+                </div>
+            </div>
+        </nav> <br> <br>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">*Campos obligatorios</div>
+        </div> <br>    
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <form action="" onsubmit="enviarFormulario(event)">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico: *</label>
+                    <input type="email" class="form-control" id="email" placeholder="email@ejemplo.com">
+                    <div id="errorEmail" class="error"></div>
+                </div>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre: *</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                    <div id="errorNombre" class="error"></div>
+                </div>
+                <div class="mb-3">
+                    <label for="apellido" class="form-label">Apellido: *</label>
+                    <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+                    <div id="errorApellido" class="error"></div>
+                </div> 
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">Teléfono:</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="(código de área) 12345678">
+                </div>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Elige tu provincia</option>
+                    <option value="1">CABA</option>
+                    <option value="2">Buenos Aires</option>
+                    <option value="3">Catamarca</option>
+                    <option value="4">Chaco</option>
+                    <option value="5">Chubut</option>
+                    <option value="6">Córdoba</option>
+                    <option value="7">Corrientes</option>
+                    <option value="8">Entre Ríos</option>
+                    <option value="9">Formosa</option>
+                    <option value="10">Jujuy</option>
+                    <option value="11">La Pampa</option>
+                    <option value="12">La Rioja</option>
+                    <option value="13">Mendoza</option>
+                    <option value="14">Misiones</option>
+                    <option value="15">Neuquén</option>
+                    <option value="16">Río Negro</option>
+                    <option value="17">Salta</option>
+                    <option value="18">San Juan</option>
+                    <option value="19">San Luis</option>
+                    <option value="20">Santa Cruz</option>
+                    <option value="21">Santa Fé</option>
+                    <option value="22">Santiago del Estero</option>
+                    <option value="23">Tierra del Fuego</option>
+                    <option value="24">Tucumán</option>
+                  </select> <br>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Algo para decirnos?</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                </div> 
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Acepto que The Market Lab me envíe información, promociones y/o encuestas.
+                    </label>
+                </div> <br>
+                <div class="d-grid gap-2"> 
+                    <button class="btn btn-primary" type="submit">ENVIAR</button> 
+                </div>
+            </form>
+        </div>
+    </div> <br><br>
+    <div class="container-fluid myclass">
+            <div class="col-md-6 offset-md-3 ">
+                  <ul class="list-group list-group-horizontal d-flex justify-content-center">
+                    <li class="list-group-item list-group-item-danger">
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a></li>
+                    <li class="list-group-item list-group-item-danger">
+                        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+                    <li class="list-group-item list-group-item-danger">
+                        <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube-square fa-2x"></i></a></li>
+                  </ul>
+                <p class="text-center mt-3 myfooterclass"> <strong>2021</strong> </p>
+                <p class="text-center mt-3 myfooterclass"> <strong>Princess Chelsea LLC - Derechos Reservados</strong> </p>
+            </div>    
+    </div>
+    <script src="./libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/contacto.js"></script>
+</body>
+
+</html>
